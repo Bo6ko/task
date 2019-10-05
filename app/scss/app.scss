@@ -1,0 +1,15 @@
+$test: 16px;
+
+body {
+	font-size: $test;
+	background-color: red;
+	color: blue;
+	margin: 20px;
+	padding: 30px;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: blue;
+  }
+}

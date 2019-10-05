@@ -1,0 +1,10 @@
+body {
+  font-size: 16px;
+  background-color: red;
+  color: blue;
+  margin: 20px;
+  padding: 30px; }
+
+@media (min-width: 700px) and (max-width: 992px) {
+  body {
+    background-color: blue; } }
