@@ -1,10 +1,271 @@
-body {
-  font-size: 16px;
-  background-color: red;
-  color: blue;
-  margin: 20px;
-  padding: 30px; }
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
-@media (max-width: 768px) {
-  body {
-    background-color: light-blue; } }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/**
+***		DEFAULT CSS
+ */
+body {
+  max-width: 1280px;
+  margin: 0 auto !important;
+  color: #ffffff !important;
+  font-family: "Tahoma";
+  font-size: 12px;
+  line-height: 18px; }
+
+.font-family-verdana {
+  font-family: Verdana; }
+
+h1 {
+  font-family: Verdana;
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 15px; }
+
+hr {
+  margin: 15px 0px;
+  box-shadow: 0px -1px #000000; }
+
+div.clear {
+  clear: both; }
+
+/* END DEFAULT CSS */
+/**
+***		LOGO
+ */
+div.logo {
+  letter-spacing: -1px;
+  font-size: 29px;
+  letter-spacing: -1px;
+  line-height: 23px;
+  font-family: "Showcard Gothic";
+  background-color: #066666; }
+
+div.logo-vertical {
+  width: 30px;
+  word-wrap: break-word;
+  float: left;
+  margin-top: 85px;
+  margin-right: 35px;
+  padding: 8px 5px 8px 7px; }
+
+div.logo-horizontal {
+  padding: 5px 18px;
+  margin: 15px 0px 27px;
+  display: inline-block; }
+
+/* END LOGO */
+div.page-container {
+  width: calc(100% - 130px);
+  margin: 0 auto;
+  float: left; }
+
+/**
+***		HEADER
+ */
+header {
+  margin: 10px 0px;
+  background-color: #022828; }
+
+header div.nav {
+  margin-left: 10px; }
+
+header div.nav ul.menu {
+  margin-bottom: 0px; }
+
+header div.nav ul.menu li {
+  width: 102px;
+  background-color: #066666;
+  text-align: center;
+  float: left;
+  margin-right: 2px;
+  position: relative; }
+
+header div.nav ul.menu li.arrow {
+  background-image: url("../../images/arrow.png");
+  background-repeat: no-repeat;
+  background-position: 85px 14px; }
+
+header div.nav ul.menu li a {
+  color: #ffffff;
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 30px; }
+
+header div.nav ul.menu li ul.sub-menu {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  z-index: 9; }
+
+/*this can be realise with JS*/
+/*
+header div.nav ul.menu li:hover ul.sub-menu {
+	visibility: visible;
+	opacity: 1;
+}
+*/
+header div.nav ul.menu li ul.sub-menu.show {
+  visibility: visible;
+  opacity: 1; }
+
+header div.nav ul.menu li ul.sub-menu li {
+  width: 150px;
+  padding: 4px 5px 0px 5px;
+  text-align: left; }
+
+header div.nav ul.menu li ul.sub-menu li a {
+  color: #ffffff;
+  width: 100%;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 200;
+  padding: 0px 5px 5px 5px;
+  border-bottom: 1px solid #82b2b2; }
+
+header div.nav ul.menu li ul.sub-menu li:last-child a {
+  border-bottom: none; }
+
+/* END HEADER */
+/**
+***		CONTENT
+ */
+div.content {
+  background-color: #533f03;
+  height: 840px; }
+
+div.content div.main {
+  background-color: #1d3a39;
+  border: 10px solid #066666;
+  height: 100%;
+  float: left;
+  padding: 20px 25px; }
+
+div.content div.main p {
+  text-indent: 30px;
+  margin-bottom: 20px; }
+
+div.content div.sidebar {
+  background-color: #022828;
+  border: 10px solid #045151;
+  float: left;
+  height: 100%;
+  padding: 15px;
+  font-size: 16px; }
+
+div.content div.sidebar div.articles {
+  margin-bottom: 35px; }
+
+div.content div.sidebar div.articles span.article {
+  width: 43px;
+  height: 43px;
+  display: inline-block;
+  background-image: url("../../images/message.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 11px; }
+
+div.content div.sidebar p {
+  margin-bottom: 18px; }
+
+div.content div.sidebar a {
+  color: #ffffff; }
+
+/* END CONTENT */
+/**
+***		FOOTER
+ */
+footer {
+  margin: 10px 0px;
+  padding: 13px 20px;
+  background-color: #0f6674;
+  font-size: 14px;
+  line-height: 18px; }
+
+footer div.links {
+  float: right; }
+
+footer div.links a {
+  color: #ffffff;
+  margin-right: 15px;
+  text-decoration: underline; }
+
+footer div.links a:last-child {
+  margin-right: 0px; }
+
+/* END FOOTER */
+@media screen and (max-width: 992px) {
+  div.content {
+    height: 1100px; } }
+
+@media screen and (max-width: 768px) {
+  .page-container {
+    width: 100% !important;
+    padding: 0px 15px; }
+  header div.nav {
+    margin-right: 10px; }
+  header div.nav ul.menu {
+    width: 100%; }
+  header div.nav ul.menu li {
+    width: 100%;
+    margin-bottom: 3px; }
+  header div.nav ul.menu li.arrow {
+    background-position: 56% center; }
+  header div.nav ul.menu li ul.sub-menu.show {
+    padding: 5px 15px;
+    text-align: center;
+    width: 100%; }
+  header div.nav ul.menu li ul.sub-menu li {
+    width: 100%; }
+  .logo-vertical {
+    display: none; }
+  div.content {
+    height: auto; }
+  footer div.links {
+    float: none; } }
