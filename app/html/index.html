@@ -4,11 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Page Title</title>
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/minify/app.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/minify/app.css">
 
-        <script src="js/minify/app.js"></script>
-        <script src="js/minify/jquery.1.11.1.min.js"></script>
+        <script src="../js/minify/jquery.1.11.1.min.js"></script>
     </head>
 
     <body>
@@ -106,7 +105,39 @@
                     <p><a href="javascript:void(0);" class="font-family-verdana">Redesign</a></p>
                     <p>RECENT STORIES</p>
 
-                    <div class="row"><img class="col-lg-12" src="images/image.jpg" alt="image" /></div>
+
+
+
+
+
+
+
+                    <div class="slideshow-container">
+
+                        <div class="mySlides slider1 active row">
+                            <img class="col-lg-12" src="../images/image.jpg" alt="image" />
+                        </div>
+
+                        <div class="mySlides slider2 row">
+                            <img class="col-lg-12" src="../images/image1.jpg" alt="image" />
+                        </div>
+
+                        <div class="mySlides slider3 row">
+                            <img class="col-lg-12" src="../images/image2.jpg" alt="image" />
+                        </div>
+
+                    </div>
+
+                    <div style="text-align:center">
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                        <span class="dot" data-slide="3"></span>
+                    </div>
+
+
+
+
+
 
                 </div>
                 <div class="clear"></div>
@@ -130,30 +161,6 @@
         </div>
         <div class="clear"></div>
 
-
-
-        <script type="text/javascript">
-
-            $('div.content').on('click', function () {
-                $('header div.nav ul.menu li ul.sub-menu').removeClass('show')
-            });
-
-            var menuHolder = $('header div.nav ul.menu li');
-            menuHolder.on('click', function () {
-
-                var itemLi          = $(this);
-                var subMenuHolder   = itemLi.find('ul.sub-menu');
-
-                if ( subMenuHolder.hasClass('show') ) {
-                    subMenuHolder.removeClass('show');
-                } else {
-                    subMenuHolder.addClass('show');
-                }
-
-            });
-
-        </script>
-
-
+        <script src="../js/minify/app.js"></script>
     </body>
 </html>

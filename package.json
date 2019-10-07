@@ -17,6 +17,7 @@
     "readable-stream": "^3.4.0"
   },
   "dependencies": {
-    "bootstrap": "file:bootstrap"
+    "bootstrap": "file:bootstrap",
+    "gulp-htmlmin": "^5.0.1"
   }
 }

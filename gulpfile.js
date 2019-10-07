@@ -8,6 +8,8 @@ var pipeline = require('readable-stream').pipeline;
 var concat = require('gulp-concat');
 var cssMin = require('gulp-css');
 
+var htmlmin = require('gulp-htmlmin');
+
 //compile 
 gulp.task('sass', function () { 
 	gulp.src('app/scss/app.scss')
@@ -46,10 +48,16 @@ gulp.task('scripts', function () {
   
 });
 
+gulp.task('html', () => {
+	return gulp.src('./app/html/index.html')
+		.pipe(htmlmin({ collapseWhitespace: true }))
+		.pipe(gulp.dest('./app/html/1'));
+});
+
 
 //gulp.task('default', ['sass', 'css', 'scripts']);
 gulp.task('default', function () {
-	
+
 });
 
 

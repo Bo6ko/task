@@ -217,6 +217,36 @@ div.content div.sidebar p {
 div.content div.sidebar a {
   color: #ffffff; }
 
+/* SLODER */
+.mySlides {
+  display: none; }
+
+img {
+  vertical-align: middle; }
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  margin-bottom: 10px; }
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease; }
+
+span.dot.active, span.dot:hover {
+  background-color: #717171; }
+
+div.slideshow-container div.active {
+  display: block; }
+
 /* END CONTENT */
 /**
 ***		FOOTER
